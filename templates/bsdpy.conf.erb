@@ -1,0 +1,12 @@
+# bsdpy
+
+description "bsdpy server"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+
+reload signal SIGUSR1
+
+exec /usr/local/bsdpy/bsdpserver.py -p <%= @nbi_root %> -r <%= @boot_method %>
