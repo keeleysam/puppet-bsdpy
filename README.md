@@ -1,11 +1,15 @@
 puppet-bsdpy
 =====
 
+Puppet module to setup BSDPy and keep it updated.
+
 Tested only on Ubuntu 14.04 LTS.
 
 Probably works on Ubuntu 12.04 LTS.
 
 You are responsible for getting NetBoot images into /nbi!
+
+Please see https://bitbucket.org/bruienne/bsdpy
 
 Dependencies:
 
