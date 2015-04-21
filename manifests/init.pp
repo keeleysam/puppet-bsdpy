@@ -1,11 +1,11 @@
 # init.pp
 class bsdpy(
-  $nbi_root    = '/nbi',
-  $bsdpy_revision  = 'master',
-  $bsdpy_source    = 'https://bitbucket.org/bruienne/bsdpy.git',
+  $nbi_root           = '/nbi',
+  $bsdpy_revision     = 'master',
+  $bsdpy_source       = 'https://bitbucket.org/bruienne/bsdpy.git',
   $pydhcplib_revision = 'master',
-  $pydhcplib_source = 'https://github.com/bruienne/pydhcplib.git',
-  $boot_method = 'http',
+  $pydhcplib_source   = 'https://github.com/bruienne/pydhcplib.git',
+  $boot_method        = 'http',
 ) {
 
   class{'bsdpy::install': } ->

@@ -2,19 +2,19 @@
 
 class bsdpy::install {
 
-  $bsdpy_revision  = $bsdpy::bsdpy_revision
-  $bsdpy_source    = $bsdpy::bsdpy_source
+  $bsdpy_revision     = $bsdpy::bsdpy_revision
+  $bsdpy_source       = $bsdpy::bsdpy_source
   $pydhcplib_revision = $bsdpy::pydhcplib_revision
-  $pydhcplib_source = $bsdpy::pydhcplib_source
-  $nbi_root  = $bsdpy::nbi_root
-  $boot_method  = $bsdpy::boot_method
+  $pydhcplib_source   = $bsdpy::pydhcplib_source
+  $nbi_root           = $bsdpy::nbi_root
+  $boot_method        = $bsdpy::boot_method
 
   include git
   include gcc
 
   class { 'python' :
-    pip        => true,
-    dev        => true,
+    pip => true,
+    dev => true,
   }
 
   package { 'docopt':
@@ -53,12 +53,12 @@ class bsdpy::install {
   }
 
   file { '/etc/init/bsdpy.conf':
-    ensure => file,
-    owner  => root,
-    group  => root,
-    mode   => '0644',
+    ensure  => file,
+    owner   => root,
+    group   => root,
+    mode    => '0644',
     content => template('bsdpy/bsdpy.conf.erb'),
-    notify => Service['bsdpy'],
+    notify  => Service['bsdpy'],
   }
 
 }
