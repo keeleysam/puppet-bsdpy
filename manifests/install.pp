@@ -28,6 +28,7 @@ class bsdpy::install {
     provider => git,
     source   => $bsdpy_source,
     revision => $bsdpy_revision,
+    notify   => Service['bsdpy'],
   }
 
   vcsrepo { '/usr/local/pydhcplib':
@@ -35,6 +36,7 @@ class bsdpy::install {
     provider => git,
     source   => $pydhcplib_source,
     revision => $pydhcplib_revision,
+    notify   => Service['bsdpy'],
   }
 
   exec { '/usr/bin/python setup.py install':
