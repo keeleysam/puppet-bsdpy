@@ -11,7 +11,13 @@ You are responsible for getting NetBoot images into /nbi!
 
 Please see https://bitbucket.org/bruienne/bsdpy
 
-Dependencies:
+Todo (open an issue and I will do them)
+======
+Add systemd support
+Add NFS support
+
+Dependencies
+====
 
 https://github.com/puppetlabs/puppetlabs-stdlib
 
