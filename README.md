@@ -13,8 +13,9 @@ Please see https://bitbucket.org/bruienne/bsdpy
 
 Todo (open an issue and I will do them)
 ======
-Add systemd support
-Add NFS support
+  Add systemd support
+  
+  Add NFS support
 
 Dependencies
 ====
