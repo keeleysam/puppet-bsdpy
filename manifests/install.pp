@@ -7,6 +7,8 @@ class bsdpy::install {
   $pydhcplib_revision = $bsdpy::pydhcplib_revision
   $pydhcplib_source   = $bsdpy::pydhcplib_source
   $nbi_root           = $bsdpy::nbi_root
+  $nbi_root_user      = $bsdpy::nbi_root_user
+  $nbi_root_group     = $bsdpy::nbi_root_group
   $boot_method        = $bsdpy::boot_method
 
   include git
@@ -47,10 +49,10 @@ class bsdpy::install {
     require     => Class['python'],
   }
 
-  file { "$nbi_root" :
+  file { $nbi_root :
     ensure => directory,
-    owner  => root,
-    group  => root,
+    owner  => $nbi_root_user,
+    group  => $nbi_root_group,
     mode   => '0775',
   }
 

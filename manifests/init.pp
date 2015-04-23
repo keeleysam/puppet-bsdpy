@@ -1,6 +1,8 @@
 # init.pp
 class bsdpy(
   $nbi_root           = '/nbi',
+  $nbi_root_user      = 'root',
+  $nbi_root_group     = 'root',
   $bsdpy_revision     = 'master',
   $bsdpy_source       = 'https://bitbucket.org/bruienne/bsdpy.git',
   $pydhcplib_revision = 'master',
