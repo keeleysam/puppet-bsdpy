@@ -33,3 +33,5 @@ https://github.com/puppetlabs/puppetlabs-git
 https://github.com/jfryman/puppet-nginx
 
 https://github.com/stankevich/puppet-python
+
+https://github.com/echocat/puppet-nfs

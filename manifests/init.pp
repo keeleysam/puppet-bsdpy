@@ -12,6 +12,7 @@ class bsdpy(
 
   class{'bsdpy::install': } ->
   class{'bsdpy::vhost': } ->
+  class{'bsdpy::vhost': } ->
   class{'bsdpy::tftp': } ->
   class{'bsdpy::service': } ->
   Class['bsdpy']
