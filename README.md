@@ -3,6 +3,8 @@ puppet-bsdpy
 
 Puppet module to setup BSDPy and keep it updated.
 
+Uses nginx, tftpd-hpa, and nfs.
+
 Tested only on Ubuntu 14.04 LTS.
 
 Probably works on Ubuntu 12.04 LTS.
@@ -15,7 +17,7 @@ Todo (open an issue and I will do them)
 ======
   Add systemd support
   
-  Add NFS support
+  Add netatalk support for Classic NetBoot.
 
 Dependencies
 ====
