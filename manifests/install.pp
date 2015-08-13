@@ -11,10 +11,10 @@ class bsdpy::install {
   $nbi_root_group     = $bsdpy::nbi_root_group
   $boot_method        = $bsdpy::boot_method
 
-  include git
-  include gcc
+  include ::git
+  include ::gcc
 
-  class { 'python' :
+  class { '::python' :
     pip => true,
     dev => true,
   }
